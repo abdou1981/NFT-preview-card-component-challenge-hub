@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+}
+.parent {
+  width: 1440px;
+  background-color: hsl(216, 50%, 11%);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 375px) {
+  .parent {
+    width: 375px;
+  }
+  .parent > div {
+    width: 300px;
+  }
+}
+.parent > div {
+  width: 350px;
+  padding: 25px;
+  background-color: hsl(217, 54%, 16%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.head .image img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.head {
+  position: relative;
+}
+.overly {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  width: 100%;
+  height: 99%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 20;
+}
+.head:hover .overly {
+  display: block;
+}
+h3 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+h3 + p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 15px;
+}
+.one {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 15px;
+}
+.one div:first-child {
+  color: hsl(178, 100%, 50%);
+}
+.one span {
+  position: relative;
+  top: -3px;
+}
+hr {
+  border-color: hsl(215, 51%, 70%);
+}
+.two {
+  margin-top: 15px;
+  display: flex;
+}
+.two img {
+  width: 50px;
+}
+.two p {
+  margin: 15px;
+  color: hsl(215, 51%, 70%);;
+}
+.two p span {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.two p span:hover {
+  color: hsl(178, 100%, 50%);
+}
