@@ -64,16 +64,17 @@ body {
 .head:hover .overly {
   display: block;
 }
-h3 {
+h2 {
   color: hsl(0, 0%, 100%);
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 15px;
   cursor: pointer;
 }
-h3:hover {
+
+h2:hover {
   color: hsl(178, 100%, 50%);
 }
-h3 + p {
+h2 + p {
   font-size: 18px;
   color: hsl(215, 51%, 70%);
   margin-bottom: 15px;
@@ -83,7 +84,7 @@ h3 + p {
   justify-content: space-between;
   font-size: 18px;
   color: hsl(215, 51%, 70%);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .one div:first-child {
   color: hsl(178, 100%, 50%);
@@ -100,10 +101,11 @@ hr {
   display: flex;
 }
 .two img {
-  width: 50px;
+  width: 30px;
+  height: 30px;
 }
 .two p {
-  margin: 15px;
+  margin: 5px 10px;
   color: hsl(215, 51%, 70%);;
 }
 .two p span {
